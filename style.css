@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -13,4 +15,178 @@ body {
 
 .light_mode {
   background-color: #F7F9FF;
+}
+
+header.head {
+  background-color: #F1F3FA;
+  width: 100%;
+  height: 244px;
+  display: flex;
+  justify-content: space-between;
+  padding: 36px 165px;
+  position: relative;
+}
+@media screen and (max-width: 800px) {
+  header.head {
+    padding: 36px 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header.head {
+    padding: 25px 20px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+header.head aside.heading h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 0px;
+}
+header.head aside.heading p.followers {
+  font-weight: 700;
+  font-size: 14px;
+  color: #63687D;
+}
+header.head aside.bg_switch {
+  display: flex;
+}
+header.head aside.bg_switch p {
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  position: absolute;
+  top: 140px;
+  padding: 0 165px 30px 165px;
+  justify-content: center;
+}
+@media screen and (max-width: 1445px) {
+  main {
+    padding: 0 40px 30px 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main {
+    top: 200px;
+  }
+}
+@media screen and (max-width: 380px) {
+  main {
+    padding: 0 10px 30px 10px;
+  }
+}
+main h2 {
+  font-weight: 24px;
+  font-weight: 700;
+  color: #63687D;
+}
+
+section.General_Overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+section.General_Overview div.box {
+  width: 255px;
+  height: 216px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #F1F3FA;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 9px;
+}
+@media screen and (max-width: 620px) {
+  section.General_Overview div.box {
+    width: 326px;
+  }
+}
+section.General_Overview div.box:hover {
+  cursor: pointer;
+  background-color: #E1E4F0;
+}
+section.General_Overview div.box figure {
+  width: 100%;
+  height: 4px;
+  background-color: #178FF5;
+  margin: 0;
+}
+section.General_Overview div.box div.logo_text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #63687D;
+}
+section.General_Overview div.box div.number {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 48px;
+  letter-spacing: -2px;
+}
+section.General_Overview div.box h3 {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: #63687D;
+}
+section.General_Overview div.box div.today {
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #1EB589;
+}
+section.General_Overview div.insta figure {
+  background-color: #EE877E;
+}
+section.General_Overview div.youtube figure {
+  background-color: #C4032B;
+}
+section.General_Overview div.youtube div.today {
+  color: #DC414C;
+}
+
+section.overview_today {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+section.overview_today aside.profiles_today {
+  width: 255px;
+  height: 125px;
+  background-color: #F1F3FA;
+  border-radius: 5px;
+  padding: 26px 27px 19px 24px;
+}
+section.overview_today aside.profiles_today:hover {
+  cursor: pointer;
+  background-color: #E1E4F0;
+}
+@media screen and (max-width: 620px) {
+  section.overview_today aside.profiles_today {
+    width: 326px;
+  }
+}
+section.overview_today aside.profiles_today div.page_views {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.overview_today aside.profiles_today div.page_views p.view_like {
+  color: #63687D;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+}
+section.overview_today aside.profiles_today div.statistics {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
