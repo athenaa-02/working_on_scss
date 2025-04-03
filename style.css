@@ -83,6 +83,52 @@ header.head aside.bg_switch {
 header.head aside.bg_switch p {
   margin: 0;
 }
+header.head aside.bg_switch label {
+  position: relative;
+  width: 55px;
+}
+header.head aside.bg_switch label input#check {
+  cursor: pointer;
+  margin-top: 0;
+  width: 48px;
+  height: 24px;
+  background: #AEB3CB;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 12px;
+  transition: all 0.9s;
+}
+header.head aside.bg_switch label input#check:checked::after {
+  display: none;
+}
+header.head aside.bg_switch label input#check:checked::before {
+  display: inline-block;
+}
+header.head aside.bg_switch label input#check:checked {
+  background: linear-gradient(#40DB82, #388FE7);
+}
+header.head aside.bg_switch label input#check::after, header.head aside.bg_switch label input#check::before {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  content: "";
+}
+header.head aside.bg_switch label input#check::after {
+  content: "";
+  display: inline-block;
+  background-color: white;
+  right: 7px;
+}
+header.head aside.bg_switch label input#check::before {
+  content: "";
+  left: 7px;
+  background-color: #252B42;
+  display: none;
+}
 
 main {
   width: 100%;

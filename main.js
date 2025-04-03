@@ -4,6 +4,7 @@ const h1Ele = document.querySelector('.text_dark')
 const number = document.querySelectorAll('.text_dark')
 const box = document.querySelectorAll('.box_light')
 const mode = document.querySelector('.mode')
+const button = document.querySelectorAll('.toggle_button')
 const body = document.body
 
 
@@ -17,6 +18,10 @@ checkBox.addEventListener('click', () =>{
         number.forEach(num => num.classList.replace('text_dark', 'text_light'))
         box.forEach(box => box.classList.replace('box_light', 'box_dark'))
         box.forEach(b => b.classList.replace('light_hover', 'dark_hover'))
+        button.forEach((checkBox) =>{
+           checkBox
+        }
+        )
 
         mode.innerHTML = 'dark'
         
