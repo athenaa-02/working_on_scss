@@ -13,12 +13,39 @@ body {
   background-color: #20222F;
 }
 
-.light_mode {
-  background-color: #F7F9FF;
+.header_light {
+  background-color: #F1F3FA;
+}
+
+.header_dark {
+  background-color: #1D1F29;
+}
+
+.text_dark {
+  color: black;
+}
+
+.text_light {
+  color: white;
+}
+
+.box_light {
+  background-color: #F1F3FA;
+}
+
+.box_dark {
+  background-color: #252B42;
+}
+
+.light_hover:hover {
+  background-color: #E1E4F0;
+}
+
+.dark_hover:hover {
+  background-color: #333A55;
 }
 
 header.head {
-  background-color: #F1F3FA;
   width: 100%;
   height: 244px;
   display: flex;
@@ -63,6 +90,7 @@ main {
   top: 140px;
   padding: 0 165px 30px 165px;
   justify-content: center;
+  z-index: 100;
 }
 @media screen and (max-width: 1445px) {
   main {
@@ -96,20 +124,16 @@ section.General_Overview div.box {
   height: 216px;
   border-radius: 6px;
   overflow: hidden;
-  background-color: #F1F3FA;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 9px;
+  cursor: pointer;
 }
 @media screen and (max-width: 620px) {
   section.General_Overview div.box {
     width: 326px;
   }
-}
-section.General_Overview div.box:hover {
-  cursor: pointer;
-  background-color: #E1E4F0;
 }
 section.General_Overview div.box figure {
   width: 100%;
@@ -161,13 +185,9 @@ section.overview_today {
 section.overview_today aside.profiles_today {
   width: 255px;
   height: 125px;
-  background-color: #F1F3FA;
   border-radius: 5px;
   padding: 26px 27px 19px 24px;
-}
-section.overview_today aside.profiles_today:hover {
   cursor: pointer;
-  background-color: #E1E4F0;
 }
 @media screen and (max-width: 620px) {
   section.overview_today aside.profiles_today {
