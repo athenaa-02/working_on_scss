@@ -5,4 +5,12 @@
 body {
   padding: 0;
   margin: 0;
+}
+
+.dark_mode {
+  background-color: #20222F;
+}
+
+.light_mode {
+  background-color: #F7F9FF;
 }/*# sourceMappingURL=style.css.map */
